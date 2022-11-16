@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+/* .grid-container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px auto auto auto 100px;
+  /* grid-template-rows: 200px 500px 700px 200px; */
+}
+
+/* header */
+
+header {
+  height: 200px;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 200px;
+  width: 200px;
+}
+
+/* nav */
+
+nav a {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-size: 23px;
+  margin-right: 60px;
+}
+
+span {
+  border: 1px solid #ffb6c1;
+  border-radius: 28px;
+  /* background-color: #ff4c4c; */
+  background: linear-gradient(180deg, #FF4C4C 0%, #ffb6c1 100%);
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+}
+
+/* banner */
+
+banner {
+  height: 500px;
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+banner img {
+  height: 400px;
+  width: 700px;
+  border-radius: 39px;
+}
+
+banner h1 {
+  font-size: 48px;
+}
+
+banner p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #83869A;
+}
+
+/* main */
+
+main {  
+  margin-top: 100px;
+  grid-column: span 3;
+  grid-row: span 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 61px;
+  height: 75px;
+  margin-top: -60px;
+}
+
+.card {
+  width: 350px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px 30px;
+  box-shadow: 5px 5px 10px#808080;
+  border-bottom: solid 1px #808080;
+  border-left: solid 1px #808080;
+  border-right: solid 1px #808080;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.card-3 {
+  color: #fff;
+  font-size: 25px;
+  padding: 50px 10px 90px 55px;
+ background: linear-gradient(180deg, #f9bdbd 0%, #ff4c4d 100%);
+}
+
+.card-link {
+  color: #ff4c4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* footer */
+
+footer {
+  grid-column: span 3;
+  background-color: #ff4c4c;
+  color: #fff;
+  /* margin-top: 100px;
+  height: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 25px; */
+}
+
+footer p {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 15px;
+  
+}
+
+/* burger menu */
+
+#menuchk {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+
+/* media queries (phone) */
+
+@media (max-width:400px) {
+
+/* phone nav */
+  
+  nav {
+    display: none;
+    background-color: #ff4c4c;
+    border: 3px solid #ff3333;
+    height: 300px;
+    width: 400px;
+    
+  }
+
+nav a {
+  margin: 0 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+  span {
+    background: none;
+    border: none;
+    padding: 0 0;
+    font-size: 20px;
+  }
+
+/* phone burger Menu */
+  
+  .burger {
+    display: block;
+      color: #ff4c4c;
+      font-size: 5em;
+    
+  }
+
+  #menuchk:checked + nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    
+    position: absolute;
+    top: 200px;
+    left: 0px; 
+  }
+
+  /* phone header */
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+/* phone banner */
+
+  banner {
+    
+  }
+
+  banner img {
+    height:200px;
+      width: 380px;
+  }
+
+  banner h1 {
+  font-size: 30px;
+}
+
+banner p {
+  font-size: 16px;
+}
+
+  /* phone main */
+
+  main {
+    margin-top: 50px;
+  }
+
+  .card-1 {
+    order: 2;
+  }
+
+  .card-2 {
+    order: 3;
+  }
+
+/* get help for text in card-3 */
+  
+  .card-3 {
+    order: 1;
+    height: 98px;
+  }
+
+  .card-3 h2 {
+  font-size: 24px;
+  padding: 15px 10px;
+  }
+
+  .card-4 {
+    order: 4;
+  }
+
+  .card-5 {
+    order: 5;
+  }
+
+  .card-6 {
+    order: 6;
+  }
+
+  
+}
+
+/* media queries (tablet) */
+
+@media (min-width:401px) and (max-width:960px) {
+
+/* tablet banner */
+  
+  banner img {
+    height: 380px;
+    width: 700px;
+    padding: 20px 0;
+  }
+  
+}
