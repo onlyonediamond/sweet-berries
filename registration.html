@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="registration.css" rel="stylesheet">
     <title>Register</title>
 </head>
+
 <body>
-    
+
+<!--- Create a form that collects the following information from the user: --->
+<!--- (All required) first & last name!, email!, password (minimum length: 6),selected course (provide options as a dropdown), notes (optional), submit & reset button --->
+<!-- "!!"  specifies completion -->
+
+<div class="grid-container">
+    <header>
+        <img src="assets/logo.png">
+       <!-- <h2>Have you discovered your perfect online cooking course? Sign up today! </h2> -->
+       <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About Us</a>
+        <a href="registration.html"><span>Get Started</span></a>
+      </nav>
+    </header>
+
+    <div class="form">
+
+        <form>
+
+            <div class="first-name">
+                <label for="first-name">First Name:</label>
+                <input required id="first-name" type="text" >
+            </div>
+
+            <div class="last-name">
+                <label for="last-name">Last Name:</label>
+                <input required id="last-name" type="text" >
+            </div>
+
+            <div class="dob">
+                <label for="dob">Date of Birth:</label>
+                <input required type="date" id="dob">
+            </div>
+
+            <div class="email">
+                <label for="email">Email:</label>
+                <input required name="email" id="email" type="email">
+            </div>
+
+            <div class="password">
+                <label for="password">Password:</label>
+                <input required name="password" id="password" type="password" minlength="6">
+            </div>
+
+            <div class="course-select">
+                <label for="course">Select a course:</label>
+                <select>
+                    <option>Cooking Essentials</option>
+                    <option>Chef Skills</option>
+                    <option>Nutrition in Coooking</option>
+                    <option>Plant-Based Cooking</option>
+                    <option>Teen's Kitchen</option>
+                </select>
+            </div>
+
+            <div class="notes">
+                <label for="notes">Additional Notes:</label>
+                <textarea>Optional</textarea>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+      <footer>
+        <p>Sweet Berries</p>
+      </footer>
+</div>
+
 </body>
 </html>
