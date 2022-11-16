@@ -13,7 +13,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 500px 100px;
+    grid-template-rows: 1fr 100px 600px 100px;
     /* row-gap: 10px; */
 }
 
@@ -21,7 +21,12 @@ header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-grid-column: span;
+}
+
+.form-title {
+    width: 75%;
+    text-align: center;
+    margin-left: 100px;
 }
 
 
@@ -39,23 +44,52 @@ nav a {
 span {
     border: 1px solid #ffb6c1;
     border-radius: 28px;
-    /* background-color: #ff4c4c; */
     background: linear-gradient(180deg, #FF4C4C 0%, #ffb6c1 100%);
     padding: 10px 20px;
     font-size: 20px;
     color: white;
   }
 
+.submission-form {
+margin-left: 150px;
+}
+
 form{
-width: 500px;
-margin: 50px;
-border: 2px solid #ff4c4c;
+width: 600px;
+border: 2px solid #ffb6c1;
+border-radius: 5px;
 padding: 10px;
+font-size: 20px;
+color: #fff;
+background: linear-gradient(180deg, #FF4C4C 0%, #ffb6c1 100%);
+}
+
+#dob {
+    font-size: 16px;
 }
 
 input, textarea {
-   /* display: block; */
     width: 100%;
+    padding: 5px 10px;
+    font-family: Roboto;
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.form-btn {
+display: flex;
+justify-content: space-around;
+}
+
+form button {
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #ffb6c1;
+    border-radius: 28px;
+    background-color: #ff4c4c;
+    color: #fff;
+    cursor: pointer;
 }
 
 footer{
