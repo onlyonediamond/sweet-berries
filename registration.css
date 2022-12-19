@@ -51,7 +51,9 @@ span {
   }
 
 .submission-form {
-margin-left: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 form{
